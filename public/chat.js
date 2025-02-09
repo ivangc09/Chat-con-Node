@@ -1,4 +1,4 @@
-var socket = io.connect('http://localhost:4000');
+var socket = io.connect('https://chat-con-node-production.up.railway.app/');
 
 var message = document.getElementById('message'),
     handle = document.getElementById('handle'),
