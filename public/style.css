@@ -1,5 +1,7 @@
 body{
     font-family: 'Nunito';
+    margin: 0;
+    background: #1d1f2c;
 }
 
 h2{
@@ -9,9 +11,7 @@ h2{
 }
 
 #mario-chat{
-    max-width: 600px;
-    margin: 30px auto;
-    border: 1px solid #ddd;
+    width: 800px;
     box-shadow: 1px 3px 5px rgba(0,0,0,0.05);
     border-radius: 2px;
 }
@@ -19,14 +19,19 @@ h2{
 #chat-window{
     height: 400px;
     overflow: auto;
-    background: #f9f9f9;
+    background: #1d1f2c;
 }
 
+
 #output p{
-    padding: 14px 0px;
-    margin: 0 20px;
-    border-bottom: 1px solid #e9e9e9;
-    color: #555;
+    padding-left: 20px;
+    padding-top: 10px;
+    margin: 20px;
+    background-color: #575ed8;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    color: white;
 }
 
 #feedback p{
@@ -36,7 +41,8 @@ h2{
 }
 
 #output strong{
-    color: #575ed8;
+    /*color: #575ed8;*/
+    color: white;
 }
 
 label{
@@ -46,24 +52,93 @@ label{
 }
 
 input{
-    padding: 10px 20px;
+    padding: 20px;
     box-sizing: border-box;
-    background: #eee;
     border: 0;
-    display: block;
-    width: 100%;
-    background: #fff;
+    background: #313348;
     border-bottom: 1px solid #eee;
     font-family: Nunito;
     font-size: 16px;
+    color:white;
 }
+
 
 button{
     background: #575ed8;
     color: #fff;
-    font-size: 18px;
-    border: 0;
+    border:none;
     padding: 12px 0;
-    width: 100%;
-    border-radius: 0 0 2px 2px;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
 }
+
+.main-container{
+    background: #1d1f2c;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.chats-menu{
+    width: 300px;
+    height: fit-content;
+    margin: 20px;
+    background: #252837;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap:10px;
+}
+
+.chat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #313348;
+    border-radius: 10px;
+    gap:10px;
+}
+
+.chat p{
+    color: white;
+}
+
+.chat img{
+    width: 70px;
+    height: 70px;
+}
+
+.text{
+    max-width: 250px;;
+}
+
+.kanit-regular {
+    font-family: "Kanit", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.inputs{
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+#handle,
+#message{
+    grid-column: 1;
+    width: 100%;
+}
+#send{
+    grid-column: 2;
+    grid-row: 1/3;
+}
+
+
+  
